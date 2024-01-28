@@ -12,8 +12,8 @@ CREATE TABLE default_commands (
 INSERT INTO default_commands (Command, Text)
 VALUES 
 ('main',
-'Welcome to the FORTUNE-9 OS
-	Courtesy of the Compnay
+'Welcome to the DUM1-OS
+	Courtesy of Me.
 
 Happy Sunday.
 
@@ -55,7 +55,7 @@ Generates a random number between 1 and 10.'),
 ░█░▄▀█░▄▀░░█░▄▀█░▄▀░
 ░░▀░░░▀░░░░░▀░░░▀░░░
 '),
-('How are you', 'Conputer'),
+('how are you', 'Conputer'),
 ('random',''),
 ('weather',''),
 ('bored',''),
