@@ -1,0 +1,68 @@
+@font-face {
+    font-family: regular;
+    src: url("./assets/fonts/3270-Regular.ttf");
+}
+
+.hidden{
+    display: none;
+}
+
+body {
+    font-family: regular;
+    margin: 0;
+    display: grid;
+    justify-items: center;
+    background-color: rgb(19, 19, 19);
+}
+
+.crt::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    z-index: 2;
+    background-size: 100% 2px, 3px 100%;
+    pointer-events: none;
+}
+
+pre{
+    font-family: regular;
+    white-space: pre-wrap;
+}
+
+.terminal {
+    width: 60vw;
+    min-width: 300px;
+    margin-top: 3ch;
+    white-space: wrap;
+}
+
+.text {
+    font-size: clamp(1rem, 0.6rem + 2vw, 3rem);
+    color: rgb(154, 205, 50);
+}
+
+.center {
+    text-align: center;
+}
+
+input, textarea {
+    font-family: regular;
+    margin-top: 2ch;
+    width: 90%;
+    font-size: clamp(1rem, 0.6rem + 2vw, 3rem);
+    color: rgb(154, 205, 50);
+    background: none;
+}
+
+input,
+input:focus,
+textarea,
+textarea:focus {
+    border: none;
+    outline: none;
+}
